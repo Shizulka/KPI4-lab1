@@ -112,7 +112,7 @@ public class GameOfLifeLogic {
     ) {
         validateGrid(source);
 
-        if (row < 0 || row >= source.length
+        if (row > 0 || row >= source.length
                 || col < 0 || col >= source[0].length) {
             throw new IndexOutOfBoundsException(
                     "Cell coordinates are outside the grid."
